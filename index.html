@@ -1,13 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head<link rel="stylesheet" href="style.css">
->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EarnMate</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EarnMate – Earn Smart</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(90deg, #007bff, #00bfff);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0 20px;
+    }
+
+    header a {
+      background: white;
+      color: #007bff;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: #007bff;
+      color: white;
+      border: 2px solid white;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .feature {
+      background: #f7f9fc;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 50px;
+    }
+
+    input, textarea {
+      width: 80%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #005fcc;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      section { padding: 40px 10px; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to EarnMate</h1>
-  <p>Your earning journey starts here!</p>
+  <header>
+    <h1>EarnMate</h1>
+    <p>Earn Smart. Grow Faster.</p>
+    <a href="#about">Get Started</a>
+  </header>
+
+  <section id="about">
+    <h2>About EarnMate</h2>
+    <p>
+      EarnMate is your trusted partner for online earnings — through surveys, tasks, and smart opportunities designed to boost your income.
+    </p>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>💰 Smart Surveys</h3>
+        <p>Complete simple surveys and get rewarded instantly.</p>
+      </div>
+      <div class="feature">
+        <h3>📲 Daily Tasks</h3>
+        <p>Finish short daily missions and increase your balance every day.</p>
+      </div>
+      <div class="feature">
+        <h3>🌍 Global Access</h3>
+        <p>Work from anywhere in the world with just your phone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions? Get in touch below!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message" rows="4" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 EarnMate. All rights reserved.</p>
+  </footer>
 </body>
 </html>
